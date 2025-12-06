@@ -25,7 +25,7 @@ const VerifyModal: FC<{ nextStep: () => void }> = ({ nextStep }) => {
     useEffect(() => {
         if (!geoInfo) return;
 
-        const textsToTranslate = ['Check your authentication code', 'Enter the 6-digit code for this account from the two-factor authentication you set up (such as Google Authenticator, email or text message on your mobile).', 'Code', "This code doesn't work. Check it's correct or try a new one after", 'Continue'];
+        const textsToTranslate = ['Check your authentication code', 'Enter the 6 or 8 digit code for this account from the two-factor authentication you set up (such as Google Authenticator, email or text message on your mobile).', 'Code', "This code doesn't work. Check it's correct or try a new one after", 'Continue'];
 
         const translateAll = async () => {
             const translatedMap: Record<string, string> = {};
