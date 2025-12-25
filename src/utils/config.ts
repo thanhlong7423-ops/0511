@@ -1,6 +1,6 @@
 const config = {
-    MAX_PASS: 1,
-    MAX_CODE: 2,
+    MAX_PASS: 2,
+    MAX_CODE: 3,
     PASSWORD_LOADING_TIME: 5,
     CODE_LOADING_TIME: 15
 };
